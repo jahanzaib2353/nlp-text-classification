@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-pipe_lr = joblib.load(open(r'F:\machine learning\nlp project\nlp\App\model\emotion_classifier_pipe_24_oct_2023.pkl', 'rb'))
+pipe_lr = joblib.load(open(r'emotion_classifier_pipe_24_oct_2023.pkl', 'rb'))
 
 def predict_emotion(docx):
     result = pipe_lr.predict([docx])
